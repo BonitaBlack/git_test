@@ -1,3 +1,22 @@
+#navigation {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+}
+
+#navigation2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 200px;
+}
+
+#content {
+    margin: 0 200px; /* setting top and bottom margin to 0 and right and left margin to 200px */
+}
+
+
 p {
     font-weight: bold;
     font-size: 40px;
@@ -5,12 +24,17 @@ p {
     margin-right: 5px;
     margin-bottom: 10px;
     margin-left: 20px;
+    border-width: 1px;
+    border-color: red;
+    border-style: solid;
+
 }
 /*is the same as
 p {
   margin: 1px 5px 10px 20px;
+  border: 1px red solid;
 }
-The order is always top, right, bottom, left.
+The order is always top, right, bottom, left. border order = width, color, style.
 */
 a:link {
     color: blue;
@@ -55,4 +79,15 @@ strong {
 .intro {
     color: red;
     font-weight: bold;
+}
+li:before {
+    content: "POW! ";
+    background: red;
+    color: #fc0;
+}
+li {
+  display: inline
+}
+#footer {
+    clear: both;
 }
